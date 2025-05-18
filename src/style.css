@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* cores normais */
+  --color-primary: #2EC4B6;
+  --color-secondary: #FF3366;
+  --color-tertiary: #0E1C36;
+
+  /* cores background */
+  --color-bg: #F6F7F8;
+  --color-bg-dark: #011627;
+
+  /* cores de texto padrão */
+  --color-text: #000;
+  --color-text-dark: #FFF;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+html.dark body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
