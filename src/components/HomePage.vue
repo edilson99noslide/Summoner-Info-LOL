@@ -1,43 +1,38 @@
 <script setup>
 import { ref } from 'vue'
+import CommonInput from './commons/CommonInput.vue'
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
+const summonerName = ref('')
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <div class="home-page-component__content">
+    <h1 class="home-page-component__title">Buscar invocador... {{ summonerName }}</h1>
 
-  <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
+    <CommonInput
+      v-model="summonerName"
+      label="Buscar"
+      type="text"
+      placeholder="Digite o nome do invocador"
+    />
   </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Learn more about IDE Support for Vue in the
-    <a
-      href="https://vuejs.org/guide/scaling-up/tooling.html#ide-support"
-      target="_blank"
-      >Vue Docs Scaling up Guide</a
-    >.
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+.home-page-component__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.home-page-component__title {
+  margin: 20px 0;
+
+  color: var(--color-primary);
+  font-size: 24px;
 }
 </style>

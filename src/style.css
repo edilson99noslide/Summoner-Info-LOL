@@ -6,24 +6,29 @@
 
 :root {
   /* cores normais */
-  --color-primary: #2EC4B6;
-  --color-secondary: #FF3366;
-  --color-tertiary: #0E1C36;
+  --color-primary: #FFC857;
+  --color-secondary: #4B3F72;
+  --color-tertiary: #F26419;
 
   /* cores background */
   --color-bg: #F6F7F8;
-  --color-bg-dark: #011627;
+  --color-bg-dark: #30343F;
 
   /* cores de texto padrão */
-  --color-text: #000;
-  --color-text-dark: #FFF;
+  --color-text-black: #000;
+  --color-text-white: #FFF;
+  --color-text-gray: #9B9B9B;
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   background-color: var(--color-bg);
 }
 
-html.dark body {
-  background-color: var(--color-bg-dark);
-  color: var(--color-text-dark);
+html.dark {
+  /* cores normais */
+  --color-secondary: #FFF;
+
+  /* cores background */
+  --color-bg: #30343F;
 }
