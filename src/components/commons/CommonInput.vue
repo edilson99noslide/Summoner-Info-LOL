@@ -1,5 +1,6 @@
 <script setup lang="ts">
-  import { CommonInput, CommonInputWithModel } from '@/types/common/commonInput.type'
+  // TYPE
+  import type { CommonInputWithModel } from '@/types/components/common/commonInput.type'
 
   defineProps<CommonInputWithModel>()
   const emit = defineEmits<{

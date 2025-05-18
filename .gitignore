@@ -7,18 +7,53 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependências
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Ambiente local e variáveis
 *.local
+.env
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+
+# MacOS
+.AppleDouble
+.LSOverride
+
+# Cache do npm/yarn
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.pnp.*
+.pnp.js
+
+# Cache do Vite (se usar)
+node_modules/.vite/
+
+# Outros arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Arquivos de testes de cobertura (se usar)
+coverage/
+
